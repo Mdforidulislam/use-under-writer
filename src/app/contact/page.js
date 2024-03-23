@@ -14,8 +14,14 @@ const pages = () => {
         {/* import contact section here  */}
         
         <div className="md:flex block gap-5 justify-between ">
+           
+            <div className="flex-1">
             <ContactForm/>
-            <Info/>
+            </div>
+
+            <div>
+            <Info />
+            </div>
         </div>
 
         </div>
