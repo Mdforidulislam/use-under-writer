@@ -10,7 +10,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 
 
-const FeaturesCard = () => {
+const FeaturesCard = ({items}) => {
     const [isVisible, setIsVisible] = useState(false);
     const controls = useAnimation();
 
@@ -73,10 +73,10 @@ const FeaturesCard = () => {
 
 
     return (
-        <div className="slider-container">
+        <div className="slider-container md:py-16 py-8">
         <Slider {...settings} >
             {
-                [1, 2, 3].map((item, index) => (
+                items?.map((item, index) => (
                     <motion.div key={index}
                         custom={index} // Pass the index as a custom prop
                         initial="hidden"
@@ -88,8 +88,8 @@ const FeaturesCard = () => {
                                 <Image className="bg-red-700-6 rounded-full absolute" src={service} width={30} height={30} alt="logo" />
                             </div>
                             
-                            <h1 className="text-xl font-semibold ">Affordable Auto Insurance </h1>
-                            <p>USA Underwriters offers affordable rates on quality coverage.</p>
+                            <h1 className="text-xl font-semibold ">{item.title} </h1>
+                            <p>{item.description}</p>
                         </div>
                     </motion.div>
                 ))

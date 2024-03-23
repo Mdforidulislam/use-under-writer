@@ -3,6 +3,23 @@
 import FeaturesCard from "../Shared/FeaturesCard";
 
 const OurMisstion = () => {
+
+// card imtem here 
+    const items = [
+        {
+            title: "Affordable Auto Insurance",
+            description: "USA Underwriters offers affordable rates on quality coverage."
+        },
+        {
+            title: "Accidents Can Add Up",
+            description: "Accidents and infractions can linger long after the fines are paid and the car is repaired."
+        },
+        {
+            title: "Price Conscious",
+            description: "Price conscious consumers choose USA Underwriters for affordable auto insurance solutions."
+        }
+    ];
+
     return (
         <div className="md:py-10 py-6">
             <div className="block md:flex md:gap-10 justify-between md:py-8 py-3 mb-6">
@@ -15,7 +32,7 @@ const OurMisstion = () => {
                 </div>
 
             </div>
-            <FeaturesCard />
+            <FeaturesCard items={items} />
         </div>
     );
 };

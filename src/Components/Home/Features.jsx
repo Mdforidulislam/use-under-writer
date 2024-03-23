@@ -3,7 +3,7 @@
 
 const Features = () => {
     return (
-        <div className="block md:flex gap-6 justify-between w-full space-y-5 md:space-y-0 py-10">
+        <div className="block md:flex gap-6 justify-between w-full space-y-5 md:space-y-0 md:py-16 py-6">
             <div className="space-y-5 w-full md:w-2/3">
                 <h5 className="text-sm text-gray-700 text-center md:text-left">Our Features</h5>
                 <h1 className="text-xl md:text-3xl font-semibold text-gray-900 text-center md:text-left">MCCA REFUND INFORMATION</h1>

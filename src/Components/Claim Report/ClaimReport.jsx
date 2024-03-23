@@ -32,7 +32,7 @@ const ClaimReport = () => {
                    
                     img {
                         width: 354px;
-                        height: 151px;
+                        height: 360px;
                     }
                 }
             `}</style>
@@ -51,6 +51,8 @@ const ClaimReport = () => {
                     </div>
 
                 </div>
+
+                {/*  all the item list here with list  */}
                 <div className="flex flex-col md:w-1/2">
                     <div className="">
                         <p className="text-sm font-medium text-gray-500 hidden md:block">You will need to answer a series of necessary questions about the incident surrounding your claim. To expedite this process and get your claim moving faster, please have as much of the following information prepared in advance of contacting us to report your claim:</p>

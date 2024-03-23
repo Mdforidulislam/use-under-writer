@@ -127,9 +127,9 @@ const Footer = () => {
 
             {/* copyright section here  */}
 
-            <div className=" max-w-screen-xl mx-auto px-6 block md:flex justify-between py-9 space-y-4 md:space-y-0 md:bg-white bg-gray-800 md:text-black text-white">
-                <p className="text-center md:text-left">Copyright 2022 USA Underwriters | <strong>Privacy Policy | Terms of Use</strong></p>
-                <p>( Built by Neutrix - Powered by Neutrix Systems )</p>
+            <div className=" max-w-screen-xl mx-auto px-6 block md:flex justify-between py-6 space-y-4 md:space-y-0 md:bg-white bg-gray-800 md:text-black text-white">
+                <p className="text-center text-sm md:text-md md:text-left">Copyright 2022 USA Underwriters | <strong>Privacy Policy | Terms of Use</strong></p>
+                <p className="text-sm md:text-md text-center">( Built by Neutrix - Powered by Neutrix Systems )</p>
             </div>
         </div>
     );

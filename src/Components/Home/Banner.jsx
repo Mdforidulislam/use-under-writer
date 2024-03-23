@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import maneLogo from '@/assets/man.png'
+import iconR from '@/assets/iconR.png'
 import { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 
@@ -26,7 +27,7 @@ const Banner = () => {
     };
     return (
         <div className="max-w-screen-xl mx-auto py-6">
-            <div className=" flex justify-between  h-full items-center bg-red-700 px-6 rounded-md py-7 md:py-0 ">
+            <div className=" flex justify-center  h-full items-center bg-red-700 px-6 rounded-md py-7 md:py-0 ">
                 <div className="space-y-6 py-10">
                     <motion.div 
                         custom={3} // Pass the index as a custom prop
@@ -39,15 +40,16 @@ const Banner = () => {
                         initial="hidden"
                         animate={controls}
                         variants={variants} 
-                        className="text-sm font-light text-white w-full md:w-3/4">With roots over a century deep in the birthplace of the automobile industry, USA Underwriters has the knowledge and expertise to help tailor a policy to suit your lifestyle, your budget, and your priorities.</motion.div>
+                        className="text-sm font-light text-white w-full md:w-3/4">With roots over a century deep in the birthplace of the automobile <br/> industry,  USA Underwriters has the knowledge and expertise to help tailor  a policy to suit  your lifestyle, your budget, and your priorities.</motion.div>
                     <motion.div 
                         custom={5} // Pass the index as a custom prop
                         initial="hidden"
                         animate={controls}
                         variants={variants}
+                        className="flex "
                         >
                         <button className="bg-white px-6 py-3 rounded-full text-sm font-semibold">Report a Claim</button>
-                        <button className="px-6 py-3 rounded-full text-sm font-semibold text-white">Learn More</button>
+                        <button className="px-6 py-3 rounded-full text-sm font-semibold text-white flex  h-full items-center gap-2">Learn More <Image src={iconR} width={20} height={4} alt="man logo" /></button>
                     </motion.div>
                 </div>
                 <div className=" hidden md:flex">
