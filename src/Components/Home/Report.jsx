@@ -12,9 +12,9 @@ const Report = () => {
                     layout="fill"
                     objectFit="cover"
                 />
-                <div className="p-8 md:w-[400px] w-full z-10 bg-red-700 rounded-md md:m-10">
-                    <h1 className="text-xl font-bold mb-4 text-white">Obtain cost-effective same-day insurance coverage quickly.</h1>
-                    <p className="text-sm mb-4 text-white">Lorem ipsum dolor sit amet consectetur. Ut nisi risus ipsum urna leo. Etiam enim varius dictum amet hac imperdiet facilisis malesuada.</p>
+                <div className="p-8 md:w-[460px] md:h-[225px] h-auto w-full z-10 bg-red-700 rounded-md md:m-10">
+                    <h1 className="text-[20px] md:text-[18px]  font-bold mb-4 text-white">Obtain cost-effective same-day insurance coverage quickly.</h1>
+                    <p className="text-[12px]  font-medium mb-4 text-white">Lorem ipsum dolor sit amet consectetur. Ut nisi risus ipsum urna leo. Etiam enim varius dictum amet hac imperdiet facilisis malesuada.</p>
                     <button className="bg-gray-900 text-white  py-3 px-6 w-full md:w-auto font-medium rounded-full ">Report a Claim</button>
                 </div>      
             </div>

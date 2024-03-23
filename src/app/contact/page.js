@@ -13,7 +13,7 @@ const pages = () => {
 
             {/* import contact section here  */}
 
-            <div className="md:flex block gap-5 justify-between  py-6">
+            <div className="md:flex block gap-5 justify-between  md:py-6">
 
                 <div className="flex-1">
                     <ContactForm />

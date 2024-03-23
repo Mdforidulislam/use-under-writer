@@ -5,14 +5,14 @@ import history from '@/assets/history.png'
 
 const History = () => {
     return (
-        <div className="">
+        <div className="py-8">
             <div className="block md:flex md:gap-16 ">
                 <div>
                     <h5 className=" font-medium text-sm hidden md:block">About us</h5>
                     <h1 className="md:text-3xl font-semibold text-black text-2xl ">History</h1>
                 </div>
                 <div>
-                    <p className="text-sm font-medium text-gray-400">In 1962, the Southern Michigan Mutual Insurance Company celebrated it’s 100th year in continuous operation and was presented with a plaque by the State of Michigan as a Centenary Business.</p>
+                    <p className="md:text-sm  text-[12px] font-medium text-gray-500">In 1962, the Southern Michigan Mutual Insurance Company celebrated it’s 100th year in continuous operation  <span className="hidden md:inline-block">and was presented with a plaque by the State of Michigan as a Centenary Business.</span></p>
                 </div>
             </div>
             {/* history iamges here */}
@@ -40,7 +40,7 @@ const History = () => {
             </div>
             {/*  text h ere  */}
             <div className="space-y-6">
-                <p className="text-sm font-medium text-[#6B7280]">
+                <p className="text-[12px] md:text-sm font-medium text-[#6B7280]">
                     In 2013, Southern Michigan Mutual Insurance Company became USA Underwriters. The name may have changed, but the dedication to our customers, our drive to serve them and their communities hasn’t. <span className="md:inline-block hidden">USA Underwriters’ mission as a leading Property and Casualty Insurance company in Michigan, remains largely unchanged from the mission of it’s progenitor: to provide affordable, quality insurance solutions to families and individuals.</span>
                 </p>
 
