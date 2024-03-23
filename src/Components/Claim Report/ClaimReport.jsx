@@ -2,6 +2,7 @@
 import Image from "next/image";
 import report from '@/assets/report.png'
 import curcle from '@/assets/circule.png'
+import styles from './style.css'
 
 
 const ClaimReport = () => {
@@ -34,16 +35,7 @@ const ClaimReport = () => {
                         width={1232}
                         height={496}
                     />
-                    <style jsx>{`
-                
-                @media (max-width: 768px) {
-                   
-                    img {
-                        width: 354px;
-                        height: 360px;
-                    }
-                }
-            `}</style>
+
                 </div>
             </div>
             {/*  text h ere  */}
@@ -54,25 +46,29 @@ const ClaimReport = () => {
                         <Image
                             src={curcle}
                             alt="report"
+                           // Apply the CSS class here
                             layout="responsive"
                             width={1232}
                             height={600}
+                            style={{
+                                width: '100%', // Default width
+                                height: 'auto', // Default height
+                                maxWidth: '1232px', // Maximum width
+                                maxHeight: '600px', // Maximum height
+                                '@media (max-width: 768px)': {
+                                    width: '354px', // Adjusted width for smaller screens
+                                    height: '660px', // Adjusted height for smaller screens
+                                    maxWidth: 'none', // Remove max-width for smaller screens
+                                    maxHeight: 'none', // Remove max-height for smaller screens
+                                }
+                            }}
                         />
-                        <style jsx>{`
-                
-                @media (max-width: 768px) {
-                   
-                    img {
-                        width: 354px;
-                        height: 360px;
-                    }
-                }
-            `}</style>
+
                     </div>
                     <div className="space-y-5">
                         <h1 className="md:text-3xl font-semibold text-gray-900 text-xl md:text-left text-center">Contact Claims <span className="hidden md:block mt-1"> </span> Department.</h1>
                         <p className="font-light text-[12px] md:text-xl md:text-left text-center ">To report a claim, please call +1 (855) 230-1656</p>
-                        <div className=" flex gap-5">
+                        <div className=" flex gap-5 md:justify-start justify-center">
                             <button className="bg-red-700 text-white font-semibold py-3 px-6 rounded-full md:border-2 md:border-red-700">Call Toll-Free</button>
                             <button className="bg-white text-red-700 font-semibold py-3 px-6 rounded-full border-2 border-red-700">Send Message</button>
                         </div>
