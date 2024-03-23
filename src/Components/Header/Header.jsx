@@ -43,7 +43,7 @@ const Header = () => {
                             <Image onClick={() => setOpen(!open)} className={`${open ? '' : 'hidden'}`} src={menuOn} alt="menu off" width={30} height={30} />
                         </div>
                        {/* nav bar item here  */}
-                        <div className={`absolute top-28 left-0 w-full bg-[#C81E1E] shadow-lg z-10 ${open ? '' : 'hidden'}`}>
+                        <div onClick={() => setOpen(!open)} className={`absolute top-28 left-0 w-full bg-[#C81E1E] shadow-lg z-10 ${open ? '' : 'hidden'}`}>
                             <ul className="flex flex-col  space-y-4 font-medium text-[16px] text-[#E5E7EB] text py-6 px-5">
                                 <Link href='/'><li>Home</li></Link>
                                 <Link href='/about'><li>About us</li></Link>
