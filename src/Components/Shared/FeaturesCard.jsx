@@ -1,9 +1,6 @@
 'use client'
-
 import { useState, useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
-
-
 import Image from "next/image";
 import service from "@/assets/service.png"
 
@@ -16,25 +13,29 @@ const FeaturesCard = () => {
         controls.start("visible");
     }, [controls]);
 
-    // Define animations
+    // Define animations with different delays for each item
     const variants = {
-        visible: { opacity: 1, y: 0 },
-        hidden: { opacity: 0, y: 100 }, // Change y value to 100 for bottom-to-top animation
+        visible: (custom) => ({
+            opacity: 1,
+            y: 0,
+            transition: { delay: custom * 0.5 } // Adjust the delay factor as needed
+        }),
+        hidden: { opacity: 0, y: 100 },
     };
 
     return (
         <div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {
-                    [1, 2, 4].map((item, index) => (
+                    [1, 2, 3].map((item, index) => (
                         <motion.div key={index}
-                        initial="hidden"
-                        animate={controls}
-                        variants={variants}
+                            custom={index} // Pass the index as a custom prop
+                            initial="hidden"
+                            animate={controls}
+                            variants={variants}
                         >
                             <div className="border px-6 py-6 space-y-5 rounded-md">
                                 <div className="bg-gray-200 p-10 relative w-[5px] h-[5px] -z-10 rounded-full flex justify-center items-center">
-                                    {/* Adjusted the class name from 'juc' to 'justify-center' */}
                                     <Image className="bg-red-700-6 rounded-full absolute" src={service} width={30} height={30} alt="logo" />
                                 </div>
                                 

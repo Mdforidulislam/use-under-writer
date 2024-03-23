@@ -1,6 +1,6 @@
 import Banner from "@/Components/Home/Banner";
 import Features from "@/Components/Home/Features";
-import FeaturesCard from "@/Components/Home/FeaturesCard";
+import FeaturesCard from "@/Components/Shared/FeaturesCard";
 import Report from "@/Components/Home/Report";
 
 
@@ -13,7 +13,6 @@ export default function Home() {
 
           <Features/>
           <FeaturesCard/>
-
           {/* Report section  */}
           <Report/>
     </main>
