@@ -6,23 +6,23 @@ import BreadCum from "@/Components/Shared/BreadCum";
 
 const pages = () => {
     return (
-        <div className="max-w-screen-xl mx-auto px-6">
-         {/* Page Bread Cume Setup here  */}
-            <BreadCum pageName={'Conact Us'}/>
-        {/* page impor start here  */}
+        <div className="max-w-screen-xl mx-auto px-6 ">
+            {/* Page Bread Cume Setup here  */}
+            <BreadCum pageName={'Conact Us'} />
+            {/* page impor start here  */}
 
-        {/* import contact section here  */}
-        
-        <div className="md:flex block gap-5 justify-between ">
-           
-            <div className="flex-1">
-            <ContactForm/>
-            </div>
+            {/* import contact section here  */}
 
-            <div>
-            <Info />
+            <div className="md:flex block gap-5 justify-between  py-6">
+
+                <div className="flex-1">
+                    <ContactForm />
+                </div>
+
+                <div>
+                    <Info />
+                </div>
             </div>
-        </div>
 
         </div>
     );

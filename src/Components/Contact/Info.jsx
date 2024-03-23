@@ -47,7 +47,7 @@ const Info = () => {
     ];
 
     return (
-        <div>
+        <div className=''>
            
             <div className=' space-y-6'>
                 {

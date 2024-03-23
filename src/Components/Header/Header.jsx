@@ -27,7 +27,7 @@ const Header = () => {
                         <Link href='/about'><li className="nav-item">About us</li></Link>
                         <Link href='/contact'><li className="nav-item">Contact</li></Link>
                         <Link href='/'><li className="nav-item">Policyholder Portal</li></Link>
-                        <Link href='/'><li className="nav-item bg-[#C81E1E] text-[#E5E7EB] px-6 py-2 rounded-full">Report a Claim</li></Link>
+                        <Link href='/claim'><li className="nav-item bg-[#C81E1E] text-[#E5E7EB] px-6 py-2 rounded-full">Report a Claim</li></Link>
                     </ul>
                 </div>
                    {/* Mobile Navigation */}
@@ -40,11 +40,11 @@ const Header = () => {
                        {/* nav bar item here  */}
                         <div className={`absolute top-28 left-0 w-full bg-[#C81E1E] shadow-lg z-10 ${open ? '' : 'hidden'}`}>
                             <ul className="flex flex-col  space-y-4 font-medium text-[16px] text-[#E5E7EB] text py-6 px-5">
-                                <Link href='/home'><li>Home</li></Link>
+                                <Link href='/'><li>Home</li></Link>
                                 <Link href='/about'><li>About us</li></Link>
                                 <Link href='/contact'><li>Contact</li></Link>
                                 <Link href='/'><li>Policyholder Portal</li></Link>
-                                <Link href='/'><li className="">Report a Claim</li></Link>
+                                <Link href='/claim'><li className="">Report a Claim</li></Link>
                             </ul>
                         </div>
                     </div>

@@ -16,7 +16,7 @@ const BreadCum = ({ pageName }) => {
     }, []);
 
     return (
-        <div className='text-center mt-7 py-5'>
+        <div className='text-center  py-5'>
             <h1 className='text-gray-900 text-xl md:text-3xl font-medium'>{pageName}</h1>
             <div className='flex items-center justify-center h-full'>
                 <Link href='/'>
