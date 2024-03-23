@@ -5,12 +5,20 @@ import logo from '@/assets/logo.png'
 import menuOn from '@/assets/menuOn.png'
 import menuOff from '@/assets/menuOff.png'
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
  // Assuming you have a logo image imported
 
 const Header = () => {
     const [open, setOpen] = useState(false);
+
+    const [pathname, setPathname] = useState('');
+
+    useEffect(() => {
+        setPathname(window.location.pathname.replace(/^\/+/, ''));
+    }, []);
+
+    console.log(pathname);
 
     return (
         <div className="py-6 border-b-2">
@@ -23,11 +31,11 @@ const Header = () => {
                 {/* Desktop Navigation */}
                 <div className="hidden md:flex  ">
                     <ul className="flex w-full justify-end items-center space-x-9 font-medium text-[16px]">
-                        <Link href='/'><li className="nav-item">Home</li></Link>
-                        <Link href='/about'><li className="nav-item">About us</li></Link>
-                        <Link href='/contact'><li className="nav-item">Contact</li></Link>
-                        <Link href='/'><li className="nav-item">Policyholder Portal</li></Link>
-                        <Link href='/claim'><li className="nav-item bg-[#C81E1E] text-[#E5E7EB] px-6 py-2 rounded-full">Report a Claim</li></Link>
+                        <Link href='/'><li className={`${pathname === ''? 'bg-[#C81E1E] text-[#E5E7EB] px-6 py-2 rounded-full': ''}`}>Home</li></Link>
+                        <Link href='/about'><li className={`${pathname === 'about'? 'bg-[#C81E1E] text-[#E5E7EB] px-6 py-2 rounded-full': ''}`}>About us</li></Link>
+                        <Link href='/contact'><li className={`${pathname === 'contact'? 'bg-[#C81E1E] text-[#E5E7EB] px-6 py-2 rounded-full': ''}`}>Contact</li></Link>
+                        <Link href='/portal'><li className={`${pathname === ''? 'bg-[#C81E1E] text-[#E5E7EB] px-6 py-2 rounded-full': ''}`}>Policyholder Portal</li></Link>
+                        <Link href='/claim'><li className={`${pathname === 'claim'? 'bg-[#C81E1E] text-[#E5E7EB] px-6 py-2 rounded-full': ''}`}>Report a Claim</li></Link>
                     </ul>
                 </div>
                    {/* Mobile Navigation */}
