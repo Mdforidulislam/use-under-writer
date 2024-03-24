@@ -68,7 +68,7 @@ const Banner = () => {
                                             variants={variants}
                                             className="flex "
                                         >
-                                            <button className="bg-white px-6 py-3 rounded-full text-sm font-semibold">Report a Claim</button>
+                                            <button className="bg-white sm:px-6 px-3 py-1 sm:py-3 rounded-full sm:text-sm font-semibold text-[12px] ">Report a Claim</button>
                                             <button className="px-6 py-3 rounded-full text-sm font-semibold text-white flex  h-full items-center gap-2">Learn More <Image src={iconR} width={20} height={4} alt="man logo" /></button>
                                         </motion.div>
                                     </div>

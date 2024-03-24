@@ -69,8 +69,8 @@ const ClaimReport = () => {
                         <h1 className="md:text-3xl font-semibold text-gray-900 text-xl md:text-left text-center">Contact Claims <span className="hidden md:block mt-1"> </span> Department.</h1>
                         <p className="font-light text-[12px] md:text-xl md:text-left text-center ">To report a claim, please call +1 (855) 230-1656</p>
                         <div className=" flex gap-5 md:justify-start justify-center">
-                            <button className="bg-red-700 text-white font-semibold py-3 px-6 rounded-full md:border-2 md:border-red-700">Call Toll-Free</button>
-                            <button className="bg-white text-red-700 font-semibold py-3 px-6 rounded-full border-2 border-red-700">Send Message</button>
+                            <button className="bg-red-700 text-white font-semibold sm:py-3 py-2 sm:px-6 px-3  rounded-full md:border-2 md:border-red-700">Call Toll-Free</button>
+                            <button className="bg-white text-red-700 font-semibold sm:py-3 py-2 sm:px-6 px-3 rounded-full border-2 border-red-700">Send Message</button>
                         </div>
                     </div>
 
